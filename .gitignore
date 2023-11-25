@@ -1,3 +1,8 @@
 __pychache__/
 .idea/
+venv/*
 venv/
+dist/
+dist/*
+rpc_bitcoin.egg-info/
+rpc_bitcoin.egg-info/*

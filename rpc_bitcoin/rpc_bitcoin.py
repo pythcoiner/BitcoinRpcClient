@@ -78,13 +78,15 @@ class BitcoinRPC:
             return ret
         
 
-rpc = BitcoinRPC('signet')
-
-print(rpc.request('createwallet', ['liana', True]))
-param = [{"desc": "wsh(or_d(pk([a5c6b76e/48'/1'/0'/2']tpubDF5861hj6vR3iJr3aPjGJz4rNbqDCRujQ21mczzKT5SiedaQqNVgHC8HT9ceyxvMFRoPMx4P6HAcL3NZrUPhRUbwCyj3TKSa64bAfnE3sLh/1/*),and_v(v:pkh([c477fd13/48'/1'/0'/2']tpubDFn7iPbFqGrTQ2aRACNsUK1MXQR4Z6dYfU2nD1WA9ifSaia642j3Wah4n5pBUEpERNWGJsyv3Dv5qwBabC9TLQrwSboKzukw9wmurGu7XVH/1/*),older(3))))#vpa5k5p6",
-          "range": [0, 10000],
-          "timestamp": 1682920310,
-          "active": True,
-          "internal":False}]
-print(rpc.request('importdescriptors', [param], wallet='liana'))
-print(rpc.request('listdescriptors', wallet='liana'))
+# rpc = BitcoinRPC('signet')
+#
+# print(rpc.request('createwallet', ['liana', True]))
+# param = [{"desc": "wsh(or_d(pk([a5c6b76e/48'/1'/0'/2']tpubDF5861hj6vR3iJr3aPjGJz4rNbqDCRujQ21mczzKT5SiedaQqNVgHC8HT9ceyxvMFRoPMx4P6HAcL3NZrUPhRUbwCyj3TKSa64bAfnE3sLh/1/*),and_v(v:pkh([c477fd13/48'/1'/0'/2']tpubDFn7iPbFqGrTQ2aRACNsUK1MXQR4Z6dYfU2nD1WA9ifSaia642j3Wah4n5pBUEpERNWGJsyv3Dv5qwBabC9TLQrwSboKzukw9wmurGu7XVH/1/*),older(3))))#vpa5k5p6",
+#           "range": [0, 10000],
+#           "timestamp": 1682920310,
+#           "active": True,
+#           "internal":False}]
+# print(rpc.request('importdescriptors', [param], wallet='liana'))
+# print(rpc.request('listdescriptors', wallet='liana'))
+#
+# print(rpc.request('listunspent', wallet='joinstr'))
